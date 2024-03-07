@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opis Obrazka</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    #opis {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<img src="eluwina.png" alt="Obrazek">
+<div id="opis"></div><br>
+<button id="pokaz">Wyświetl opis</button>
+<button id="schowaj">Usuń opis</button>
+
+<script>
+  
+    $("#pokaz").click(function () {
+      $("#opis").text("Pulit matołek pokazuje LAJKA").slideDown();
+    });
+
+    $("#schowaj").click(function () {
+      $("#opis").slideUp();
+    });
+  
+</script>
+
+</body>
+</html>
